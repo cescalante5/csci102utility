@@ -42,4 +42,14 @@ def ScoreFinder(list1, list2, s):
     if name != -1:
         print('OUTPUT %s got a score of %d' % (list1[name], list2[name]))
     else:
-        print('OUTPUT player not found')
+        print('OUTPUT player not found')            
+
+def Union(list1, list2):
+    for x in list1:
+        index = -1
+        for y in list2:
+            index += 1
+            if x == y:
+                list2.remove(list2[index])
+    out = list1 + list2
+    return out
