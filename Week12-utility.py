@@ -61,3 +61,16 @@ def Intersection(list1, list2):
             if k == p:
                 out.append(k)
     return out
+
+def NotIn(list1, list2):
+    out = []
+    check = 1
+    for x in list1:
+        for y in list2:
+            if x == y:
+                check = 0
+        if check != 0:
+            out.append(x)
+    return out
+            
+                
