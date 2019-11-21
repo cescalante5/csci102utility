@@ -19,3 +19,15 @@ def UpdateString(x, y, num):
     for j in l:
         out += w
     print('OUTPUT %s' % out)
+
+def FindWordCount(l, s):
+    count = 0
+    for x in l:
+        t = 0
+        f = 0
+        count -= 1
+        while f != -1:
+            f = x.find(s, t)
+            t = x.find(s, t) + 1
+            count += 1
+    return count
