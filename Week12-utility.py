@@ -53,3 +53,11 @@ def Union(list1, list2):
                 list2.remove(list2[index])
     out = list1 + list2
     return out
+
+def Intersection(list1, list2):
+    out = []
+    for k in list1:
+        for p in list2:
+            if k == p:
+                out.append(k)
+    return out
