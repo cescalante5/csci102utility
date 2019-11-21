@@ -4,3 +4,8 @@
 
 def PrintOutput(string):
     print('OUTPUT %s' % (string))
+
+def LoadFile(file):
+    with open(file, 'r+') as x:
+        y = x.readlines()
+    return y
